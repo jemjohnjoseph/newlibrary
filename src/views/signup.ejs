@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <link href="/css/styles.css" rel="stylesheet">
+   
+	</head> 
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+  </div>
+</header>
+<hr>
+<!-- form start -->
+<!--sign in form  -->
+<div class="signup">
+    <h3> library online</h3>
+      <h6>Login Read & Grow</h6>
+      <br>
+    <!-- <form  onsubmit="return registerValidate()" action="/signin" method="GET"> -->
+      <form action="/signup/add" method="POST">
+        <div class="txt_field">
+            <input type="text" id="name" placeholder="User Name" name="name" required><br>
+            <span></span>
+   <br>
+            <div id="name_msg"></div>
+        </div>
+        <div class="txt_field">
+            <input type="text" placeholder="E-mail" id="email" name="email" required><br>
+            <span></span>
+           <br>
+            <div id="email_msg"></div>
+        </div>
+        <div class="txt_field">
+            <input type="number" placeholder="Phone Number" id="mobile" name="phone" required><br>
+            <span></span>
+            <br>
+            <div id="mobile_msg"></div>
+        </div>
+        <div class="txt_field">
+            <input type="password" id="pass1" placeholder="Password" name="pwd" required><br>
+            <span></span>
+           <br>
+            <div id="pass1_msg"></div>
+        </div>
+        <div class="txt_field">
+            <input type="password" placeholder="Confirm Password" id="pass2" name="Repassword" required><br>
+            <span></span>
+            <br>
+            <div id="pass2_msg"></div>
+        </div>
+        <div class="acnd">
+                  <div class="pass" id="pass"><input type="checkbox" class="pass" id="check"> By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</div>
+        <div id="check_msg"></div>
+        
+        
+        <input type="submit" value="SIGN-UP" class="btn btn-primary" style="margin-left: 2px;width:70%;" >         
+        
+         
+           <h5>Already have an account ?</h5>
+         </div>
+        <div class="logbtn" style="margin-left: 2px;width:70% ;"  >
+        <a href="/signin">LOG-IN</a>
+       </div><br/> 
+      </form>
+</div>
+
+    <!-- signup form -->
+<!-- form end -->
+<div class="container" id="footer">
+  <div class="row">
+      <div class=imgg>
+    <img src="images/mac.png" alt="beauty image" class="pic">
+      </div>
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      </div>
+    </div>
+
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+       
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- script references -->
+  <script src="js/form.js"></script> 
+  <script src="js/passwordstrength.js"></script> 
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
